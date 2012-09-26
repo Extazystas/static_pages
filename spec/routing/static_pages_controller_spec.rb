@@ -6,7 +6,7 @@ describe 'Routing to StaticPagesController' do
   end
 
   it 'routes GET /home to #home' do
-    {get: '/home'}.should route_to('static_pages#home')
+    {get: '/'}.should route_to('static_pages#home')
   end
 
    it 'routes GET /about to #about' do

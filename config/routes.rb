@@ -5,7 +5,7 @@ StaticPages::Application.routes.draw do
   get "static_pages/about", :as => :about
 
   match "who-we-are" => 'static_pages#who_we_are', :as => :who_we_are
-  match "home" => 'static_pages#home', :as => :home
+  match "/" => 'static_pages#home', :as => :home
   match "about" => 'static_pages#about', :as => :about
   # match "/" => "static_pages/home", :as => :home
   # match '/', :to => redirect('/static_pages/home')

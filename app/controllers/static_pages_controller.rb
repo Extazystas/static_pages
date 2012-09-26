@@ -14,6 +14,7 @@ class StaticPagesController < ApplicationController
       nadezhda.poluyanova@altoros.com
       konstantin.ilchenko@altoros.com
       sergey.berdnikovich@altoros.com
+      sergey.basdh@altoros.com
     )
   end
 end

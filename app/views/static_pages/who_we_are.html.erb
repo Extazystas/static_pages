@@ -1,7 +1,7 @@
 <% content_for(:title) { 'Who We Are' } %>
-<h1>Who We Are</h1>
+<div class="pagetitle"><h2>RubyGardens faces</h2></div>
 
-<table>
+<table class="table">
 <% @emails.in_groups_of(4, false) do |row_emails| %>
   <tr>
     <% for email in row_emails %>
