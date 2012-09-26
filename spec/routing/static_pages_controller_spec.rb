@@ -4,4 +4,12 @@ describe 'Routing to StaticPagesController' do
   it 'routes GET /who-we-are to #who_we_are' do
     {get: '/who-we-are'}.should route_to('static_pages#who_we_are')
   end
+
+  it 'routes GET /home to #home' do
+    {get: '/home'}.should route_to('static_pages#home')
+  end
+
+   it 'routes GET /about to #about' do
+    {get: '/about'}.should route_to('static_pages#about')
+  end
 end
