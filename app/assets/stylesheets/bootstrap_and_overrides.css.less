@@ -31,15 +31,24 @@ body {
 // Example:
 // @linkColor: #ff0000;
 
-body .content {
-  background-color: #e1e1e1;
-  padding:20px;
-  border-radius: 30px;
+body {
+  background: url(/images/bg_body.png) #333;
+  .content {
+    min-height:500px;
+    background-color: #e1e1e1;
+    padding:20px;
+    border-radius: 30px;
 
-  .span9 {width:810px;}
-  .pagetitle {text-align:center;}
-  .table tr {border-top:1px solid #ccc; border-bottom:1px solid #ccc;
-    td {border:none;}
-  }
+    .span9 {width:810px;}
+    .pagetitle {text-align:center;}
+    .table tr {border-top:1px solid #ccc; border-bottom:1px solid #ccc;
+      td {border:none; vertical-align:middle; text-align:center;}
+      td:nth-child(odd) {border-left:1px solid #ccc;}
+      td:last-child {border-right:1px solid #ccc;}
+
+    }
+
+}
+ footer p {color:#eee;}
 }
  hr {border-top: 1px solid #999; border-bottom: 1px solid #fff;}

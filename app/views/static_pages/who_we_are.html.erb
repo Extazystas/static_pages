@@ -2,10 +2,12 @@
 <div class="pagetitle"><h2>RubyGardens faces</h2></div>
 
 <table class="table">
-<% @emails.in_groups_of(4, false) do |row_emails| %>
+<% @emails.in_groups_of(2, false) do |row_emails| %>
   <tr>
     <% for email in row_emails %>
-      <td><%= image_tag gravatar_url email %></td>
+      <td><strong><%= gravatar_name email %></strong></td>
+      <td><%= gravatar_url email %></td>
+      
     <% end %>
   </tr>
 <% end %>
