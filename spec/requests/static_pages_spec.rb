@@ -7,6 +7,11 @@ describe "StaticPages" do
       visit '/static_pages/home'
       page.should have_selector('title', text: 'Knyazev Static: Homepage')
     end
+
+     it 'should have welcome content' do 
+      visit '/static_pages/home'
+      page.should have_content('Welcome!')
+    end
   end
 
   describe 'About page' do
