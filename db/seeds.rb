@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+EmailList.create :mail => "knyazev@ziex.by"
+EmailList.create :mail => "test@mail.com"
+EmailList.create :mail => "paveltyk@gmail.com"
+EmailList.create :mail => "mail@mail.ru"
+EmailList.create :mail => "some@mail.ru"
+EmailList.create :mail => "test@mail.ru"
