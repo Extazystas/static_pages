@@ -14,6 +14,11 @@ describe "StaticPages" do
       visit '/static_pages/about'
       page.should have_content('Welcome to RubyGardens')
     end
+
+    it 'should have correct title' do 
+      visit '/static_pages/about'
+      page.should have_selector('title', text: 'Knyazev Static: About page')
+    end
   end
 
 end
