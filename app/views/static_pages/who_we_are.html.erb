@@ -5,10 +5,15 @@
 <% @emails.in_groups_of(2, false) do |row_emails| %>
   <tr>
     <% for email in row_emails %>
-      <td><strong><%= gravatar_name email %></strong></td>
-      <td><%= gravatar_url email %></td>
+      <td><strong><%= gravatar_name email.mail %></strong></td>
+      <td>
+        <%= gravatar_url email.mail %>
+       
+      </td>
       
     <% end %>
   </tr>
 <% end %>
 </table>
+
+<%= link_to 'Add user', new_email_list_path, :class => "btn btn-success" %>

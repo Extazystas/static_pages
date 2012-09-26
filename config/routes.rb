@@ -1,5 +1,7 @@
 StaticPages::Application.routes.draw do
 
+  resources :email_lists
+
   get "static_pages/home", :as => :home
   
   get "static_pages/about", :as => :about
