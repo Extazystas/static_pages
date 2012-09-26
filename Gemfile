@@ -10,6 +10,7 @@ gem 'pg'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'rspec-check-auth'
 end
  
 gem 'capybara', group: :test

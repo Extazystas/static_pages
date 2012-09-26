@@ -6,11 +6,7 @@
   <tr>
     <% for email in row_emails %>
       <td><strong><%= gravatar_name email.mail %></strong></td>
-      <td>
-        <%= gravatar_url email.mail %>
-
-      </td>
-      
+      <td><%= gravatar_url email.mail %></td>
     <% end %>
   </tr>
 <% end %>

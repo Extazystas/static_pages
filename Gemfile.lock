@@ -106,6 +106,7 @@ GEM
       rspec-core (~> 2.11.0)
       rspec-expectations (~> 2.11.0)
       rspec-mocks (~> 2.11.0)
+    rspec-check-auth (0.5.2)
     rspec-core (2.11.1)
     rspec-expectations (2.11.3)
       diff-lcs (~> 1.1.3)
@@ -158,6 +159,7 @@ DEPENDENCIES
   jquery-rails
   pg
   rails (= 3.2.8)
+  rspec-check-auth
   rspec-rails
   sass-rails (~> 3.2.3)
   twitter-bootstrap-rails
