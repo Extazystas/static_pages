@@ -1,7 +1,12 @@
 <% content_for(:title) { 'Who We Are' } %>
 <h1>Who We Are</h1>
-<ul>
-  <% %w(paveltyk@gmail.com andrey.koleshko@altoros.com stanislav.knyazev@altoros.com).each do |email| %>
-    <li><%= image_tag gravatar_url email %></li>
-  <% end %>
-</ul>
+
+<table>
+<% @emails.in_groups_of(4, false) do |row_emails| %>
+  <tr>
+    <% for email in row_emails %>
+      <td><%= image_tag gravatar_url email %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>

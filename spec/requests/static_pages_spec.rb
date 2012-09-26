@@ -50,6 +50,10 @@ describe "StaticPages" do
     it "should have about content" do
       page.should have_content('Who We Are')
     end
+
+    it "should have a avatar images" do
+      page.should have_selector('img', :src => '/http://www.gravatar.com/avatar/*')
+    end
   end
 
 
