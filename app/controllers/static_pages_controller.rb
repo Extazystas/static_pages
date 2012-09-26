@@ -7,6 +7,5 @@ class StaticPagesController < ApplicationController
 
   def who_we_are
     @emails = EmailList.all
-   
   end
 end

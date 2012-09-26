@@ -1,6 +1,8 @@
-<h1>Editing email_list</h1>
+<div class="show">
+  <div class="pagetitle"><h2>Email edit</h2> </div>
+  <p class="alert notice"><%= notice %></p>
+  <%= render 'form' %>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @email_list %> |
-<%= link_to 'Back', email_lists_path %>
+  <%= link_to 'Show', @email_list, :class => "btn btn-info"  %> 
+  <%= link_to 'Back', email_lists_path, :class => "btn btn-primary"  %>
+</div>

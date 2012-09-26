@@ -1,6 +1,7 @@
-<h1>Listing email_lists</h1>
+<p class="alert notice"><%= notice %></p>
+<h1>Managing emails</h1>
 
-<table>
+<table class="table">
   <tr>
     <th>Mail</th>
     <th></th>
@@ -10,14 +11,19 @@
 
 <% @email_lists.each do |email_list| %>
   <tr>
-    <td><%= email_list.mail %></td>
-    <td><%= link_to 'Show', email_list %></td>
-    <td><%= link_to 'Edit', edit_email_list_path(email_list) %></td>
-    <td><%= link_to 'Destroy', email_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+   
+    <td><h5><%= link_to gravatar_name(email_list.mail), email_list_path(email_list.id) %></h5></td>
+      <td>
+        <%= gravatar_url email_list.mail %>
+      </td>
+   
+    <td><%= link_to 'Edit', edit_email_list_path(email_list), :class => "btn btn-success" %></td>
+    <td><%= link_to 'Destroy', email_list, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Email list', new_email_list_path %>
+<%= link_to 'Add Email', new_email_list_path, :class => "btn btn-primary" %>

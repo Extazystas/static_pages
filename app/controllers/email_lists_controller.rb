@@ -46,7 +46,7 @@ class EmailListsController < ApplicationController
 
     respond_to do |format|
       if @email_list.save
-        format.html { redirect_to who_we_are_path , notice: 'Email list was successfully created.' }
+        format.html { redirect_to email_lists_path, notice: 'Email list was successfully created.' }
         format.json { render json: @email_list, status: :created, location: @email_list }
       else
         format.html { render action: "new" }

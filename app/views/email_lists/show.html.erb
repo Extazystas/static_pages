@@ -1,10 +1,13 @@
-<p id="notice"><%= notice %></p>
+<div class="show">
+  <div class="pagetitle"><h2>Email details</h2> </div>
+<p class="alert notice"><%= notice %></p>
 
-<p>
-  <b>Mail:</b>
-  <%= @email_list.mail %>
-</p>
-
-
-<%= link_to 'Edit', edit_email_list_path(@email_list) %> |
-<%= link_to 'Back', email_lists_path %>
+<table class="table">
+  <tr>
+    <td><b>Email:</b></td>
+    <td><%= @email_list.mail %></td>
+    <td><%= link_to 'Edit', edit_email_list_path(@email_list), :class => "btn btn-success" %> </td>
+    <td><%= link_to 'Back', email_lists_path, :class => "btn btn-info" %></td>
+  </tr>
+</table>
+</div>

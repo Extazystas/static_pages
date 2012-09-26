@@ -1,4 +1,4 @@
-<%= form_for(@email_list) do |f| %>
+<%= form_for(@email_list, :class => "table") do |f| %>
   <% if @email_list.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@email_list.errors.count, "error") %> prohibited this email_list from being saved:</h2>
@@ -12,10 +12,10 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :mail %><br />
+    <%= f.label :mail %>
     <%= f.text_field :mail %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Add email" %>
   </div>
 <% end %>
