@@ -39,5 +39,18 @@ describe "StaticPages" do
 
   end
 
+  describe "Who we are page" do
+    before(:each) { visit who_we_are_path }
+
+
+    it "should have correct title" do
+      page.should have_selector('title', text: 'Knyazev Static: Who We Are')
+    end
+ 
+    it "should have about content" do
+      page.should have_content('Who We Are')
+    end
+  end
+
 
 end
