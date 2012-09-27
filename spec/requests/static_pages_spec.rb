@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'has_image'
 
 describe "StaticPages" do
   
@@ -50,9 +51,11 @@ describe "StaticPages" do
     end
 
     #TODO
-    # it "should have a avatar images" do
-    #   page.should have_selector("img", src: /http:\/\/www.gravatar.com/)
-    # end
+    xit "should have a avatar images" do
+      # page.should have_image(/http:\/\/www.gravatar.com/)
+      page.should have_image 
+
+    end
   end
 
 end
